@@ -21,6 +21,7 @@
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.20" />
+    <PackageReference Include="Microsoft.UI.Xaml" Version="2.7.0" />
     <PackageReference Include="ReactiveUI" Version="16.3.10" />
     <PackageReference Include="ReactiveUI.Events.XamForms" Version="15.1.1" />
     <PackageReference Include="ReactiveUI.XamForms" Version="16.3.10" />
