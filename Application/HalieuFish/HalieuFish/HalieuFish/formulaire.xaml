@@ -3,10 +3,76 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HalieuFish.formulaire">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#6fb0e3">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
+                <Label Text="Formulaire" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                
+            </Frame>
+
+            <ScrollView BackgroundColor="#6fb0e3">
+                <StackLayout BackgroundColor="#6fb0e3">
+                    
+                    <Grid BackgroundColor="#6fb0e3" RowDefinitions="auto">
+
+                        
+                            <Frame Grid.Column="0" Grid.Row="0" BackgroundColor="#cccccc" CornerRadius="15">
+                                <StackLayout >
+                                    <Image Source="poisson1.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 1" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        
+
+
+                        
+                            <Frame Grid.Column="1" Grid.Row="0" BackgroundColor="#cccccc" CornerRadius="15">
+                                <StackLayout >
+                                    <Image Source="poisson2.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 2" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+               
+
+                     
+                    <Frame Grid.Column="0" Grid.Row="1" BackgroundColor="#cccccc" CornerRadius="15">
+                                <StackLayout >
+                                    <Image Source="poisson3.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 3" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+       
+
+                        
+            <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="#cccccc" CornerRadius="15">
+                                <StackLayout >
+                                    <Image Source="poisson8.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 4" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,2,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+        
+
+                       
+            <Frame  Grid.Column="0" Grid.Row="2" BackgroundColor="#cccccc" CornerRadius="15">
+                                <StackLayout >
+                                    <Image Source="poisson5.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 5" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+        
+        </Grid>
+
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

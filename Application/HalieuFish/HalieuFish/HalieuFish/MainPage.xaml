@@ -8,13 +8,14 @@
             <Label Text="Connexion" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
-        <Entry x:Name="mail" Placeholder="Adresse mail" TextChanged="OnEntryTextChanged"/>
+        <Entry x:Name="mail" Placeholder="Adresse mail"/>
         <Entry IsPassword="true" Placeholder="mot de passe" />
 
             <Button 
                 Text="Connexion" 
                 CornerRadius="15"
-                Margin="15"/>
+                Margin="15"
+                Clicked="GoFormulaire"/>
 
 
         <Grid >

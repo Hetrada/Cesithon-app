@@ -13,8 +13,7 @@
                 <Entry Placeholder="Adresse mail"/>
                 <Entry IsPassword="True" Placeholder="Mot de passe"/>
                 <Entry Placeholder="Nom de l'entreprise"/>
-                <Entry Placeholder="Immatriculation du bateau"/>
-                <Entry Placeholder="Nom du capitaine"/>
+                
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">

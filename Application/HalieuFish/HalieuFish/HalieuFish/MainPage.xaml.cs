@@ -25,19 +25,24 @@ namespace HalieuFish
             App.Current.MainPage = new Page2();
         }
 
-        void OnEntryTextChanged(object sender, TextChangedEventArgs e)
+       /* void OnEntryTextChanged(object sender, TextChangedEventArgs e)
         {
             var entry = new Entry();
             
-        }
+        }/*
 
-        void OnEntryCompleted(object sender, EventArgs e)
+        /*void OnEntryCompleted(object sender, EventArgs e)
         {
             string text = ((Entry)sender).Text;
             if(text == "pecheur")
             {
                 App.Current.MainPage = new formulaire();
             }
+        }*/
+
+        private void GoFormulaire(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new formulaire();
         }
     }
 }
