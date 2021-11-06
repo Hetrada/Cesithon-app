@@ -4,21 +4,32 @@
              x:Class="HalieuFish.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
+            <Label Text="Connexion" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+
+        <Entry x:Name="mail" Placeholder="Adresse mail" TextChanged="OnEntryTextChanged"/>
+        <Entry IsPassword="true" Placeholder="mot de passe" />
+
+            <Button 
+                Text="Connexion" 
+                CornerRadius="15"
+                Margin="15"/>
+
+
+        <Grid >
+            <Button 
+                    Grid.Column ="0" 
+                    Text="Créer un compte" 
+                    CornerRadius="15"
+                    Clicked="GoCreation"/>
+
+            <Button 
+                    Grid.Column ="1" 
+                    Text="Mot de passe oublié" 
+                    CornerRadius="15"
+                Clicked="GoMdpOubliee"/>
+        </Grid>
     </StackLayout>
 
 </ContentPage>
