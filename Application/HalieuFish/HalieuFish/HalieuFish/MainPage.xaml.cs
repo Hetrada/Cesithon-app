@@ -4,12 +4,15 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using Xamarin.Forms;
+using MySqlConnector;
 
 namespace HalieuFish
 {
     public partial class MainPage : ContentPage
-    {
+    {      
+
         public MainPage()
         {
             InitializeComponent();
@@ -39,5 +42,7 @@ namespace HalieuFish
                 App.Current.MainPage = new formulaire();
             }
         }
+
+        
     }
 }
