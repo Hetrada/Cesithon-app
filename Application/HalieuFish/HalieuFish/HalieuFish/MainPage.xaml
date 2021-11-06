@@ -30,8 +30,10 @@
                     Grid.Column ="1" 
                     Text="Mot de passe oublié" 
                     CornerRadius="15"
-                Clicked="GoMdpOubliee"/>
+                    Clicked="GoMdpOubliee"/>
+
         </Grid>
+
     </StackLayout>
 
 </ContentPage>
