@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HalieuFish.InscriptionEntreprise">
+    <ContentPage.Content>
+        <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
+            <Label Text="Création d'un compte entreprise" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" Spacing="15">
+                <Entry Placeholder="Code de l'entreprise"/>
+                <Entry Placeholder="Adresse mail"/>
+                <Entry IsPassword="True" Placeholder="Mot de passe"/>
+                <Entry Placeholder="Nom de l'entreprise"/>
+                <Entry Placeholder="Immatriculation du bateau"/>
+                <Entry Placeholder="Nom du capitaine"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
+                <Button Text="Valider"
+                        CornerRadius="15"/>
+                <Button Text="Retour" 
+                        Clicked="precedent"
+                        CornerRadius="15"/>
+            </StackLayout>
+        </StackLayout>
+        
+       
+    </ContentPage.Content>
+</ContentPage>
