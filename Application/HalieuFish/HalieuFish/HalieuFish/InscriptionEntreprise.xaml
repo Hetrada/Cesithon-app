@@ -12,7 +12,8 @@
                 <Entry Placeholder="Code de l'entreprise"
                        Completed="OnEntryCompletedCE"/>
                 <Entry Placeholder="Adresse mail"
-                       Completed="OnEntryCompletedAME"/>
+                       Completed="OnEntryCompletedAME"
+                       Keyboard="Email"/>
                 <Entry IsPassword="True" Placeholder="Mot de passe"
                        Completed="OnEntryCompletedMDP"/>
                 <Entry Placeholder="Nom de l'entreprise"
