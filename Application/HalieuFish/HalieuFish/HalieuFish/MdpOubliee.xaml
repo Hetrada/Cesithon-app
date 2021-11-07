@@ -9,11 +9,12 @@
             </Frame>
 
 
-            <Entry x:Name="recup" Placeholder="Adresse mail" />
+            <Entry x:Name="recup" Placeholder="Adresse mail" Completed="OnEntryCompleted" />
             
             <Button Text="Envoyer un email de récupération" 
                     CornerRadius="15"
-                    HorizontalOptions="Center"/>
+                    HorizontalOptions="Center"
+                    Clicked="MailMDP"/>
             
             
         </StackLayout>
