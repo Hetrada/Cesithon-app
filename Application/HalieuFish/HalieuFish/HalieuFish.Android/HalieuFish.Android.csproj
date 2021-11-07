@@ -83,7 +83,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon.png" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HalieuFish\HalieuFish.csproj">
       <Project>{ECA0116A-6D67-47F6-B91C-9D004ADA52C5}</Project>
