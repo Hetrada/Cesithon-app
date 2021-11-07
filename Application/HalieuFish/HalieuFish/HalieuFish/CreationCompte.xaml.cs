@@ -38,5 +38,10 @@ namespace HalieuFish
         {
             App.Current.MainPage = new InscriptionPecheur();
         }
+
+        private void retour(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new MainPage();
+        }
     }
 }

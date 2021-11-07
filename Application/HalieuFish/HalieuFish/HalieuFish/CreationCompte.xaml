@@ -5,7 +5,14 @@
     <ContentPage.Content>
         <StackLayout>
             <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
-                <Label Text="Inscription" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                <StackLayout>
+                    <Grid>
+                        <Label Text="Inscription" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                    <Button Text="&lt;" Clicked="retour" BackgroundColor="#2196F3" VerticalOptions="Start"  HorizontalOptions="Start" FontSize="Title"/>
+                    </Grid>
+                    
+                </StackLayout>
+                
             </Frame>
             <StackLayout Orientation="Vertical" VerticalOptions="Center">
 
