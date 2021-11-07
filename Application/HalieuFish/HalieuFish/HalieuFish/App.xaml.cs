@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Data.SqlClient;
 
 namespace HalieuFish
 {

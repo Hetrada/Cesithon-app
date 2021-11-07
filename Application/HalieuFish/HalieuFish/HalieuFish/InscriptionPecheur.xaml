@@ -8,6 +8,7 @@
                 <Label Text="Création d'un compte pêcheur" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
             <StackLayout Orientation="Vertical" VerticalOptions="Center">
+
                 <Entry x:Name="code" Placeholder="Code entreprise" Completed="EntercodeE" />
                 <Entry x:Name="Nom" Placeholder="NOM" Completed="Entername" />
                 <Entry x:Name="Prenom" Placeholder="Prénom" Completed="Enterprenom" />
