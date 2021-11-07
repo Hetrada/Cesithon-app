@@ -15,11 +15,6 @@ namespace HalieuFish
         public InscriptionPecheur()
         {
             InitializeComponent();
-            string  
-        }
-        private void creerUser(object sender, EventArgs e)
-        {
-            
         }
         private void creerUser(object sender, EventArgs e)
         {
