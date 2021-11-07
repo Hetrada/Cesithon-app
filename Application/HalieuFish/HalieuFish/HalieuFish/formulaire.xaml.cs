@@ -183,5 +183,85 @@ namespace HalieuFish
         {
             box5Hq = !box5Hq;
         }
+
+        private void okP1(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void MP1Ma(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MP1Nm(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MP1Hq(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp2Ma(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp2Nm(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp2Hq(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp3Ma(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp3Nm(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp3Hq(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp4Ma(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp4Nm(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp4Hq(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp5Ma(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp5Nm(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Mp5Hq(object sender, EventArgs e)
+        {
+
+        }
     }
 }
