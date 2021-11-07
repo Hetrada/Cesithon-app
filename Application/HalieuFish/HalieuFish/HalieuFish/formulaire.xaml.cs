@@ -13,24 +13,39 @@ namespace HalieuFish
     public partial class formulaire : ContentPage
     {
         bool box1M = false;
+        int masseM1;
         bool box1Nm = false;
+        int masseNm1;
         bool box1Hq = false;
+        int masseHq1;
 
         bool box2M = false;
+        int masseM2;
         bool box2Nm = false;
+        int masseNm2;
         bool box2Hq = false;
+        int masseHq2;
 
         bool box3M = false;
+        int masseM3;
         bool box3Nm = false;
+        int masseNm3;
         bool box3Hq = false;
+        int masseHq3;
 
         bool box4M = false;
+        int masseM4;
         bool box4Nm = false;
+        int masseNm4;
         bool box4Hq = false;
+        int masseHq4;
 
         bool box5M = false;
+        int masseM5;
         bool box5Nm = false;
+        int masseNm5;
         bool box5Hq = false;
+        int masseHq5;
         public formulaire()
         {
             InitializeComponent();
@@ -108,7 +123,10 @@ namespace HalieuFish
             };
             Task slt = Email.ComposeAsync(smsMessage);
         }
-
+        public void seeDataForm()
+        {
+            
+        }
         private void box1_maille(object sender, CheckedChangedEventArgs e)
         {
             box1M = !box1M;
