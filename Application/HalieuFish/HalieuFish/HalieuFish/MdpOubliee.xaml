@@ -9,7 +9,7 @@
             </Frame>
 
 
-            <Entry x:Name="recup" Placeholder="Adresse mail" Completed="OnEntryCompleted" />
+            <Entry x:Name="recup" Placeholder="Adresse mail" Completed="OnEntryCompleted" Keyboard="Email"/>
             
             <Button Text="Envoyer un email de récupération" 
                     CornerRadius="15"

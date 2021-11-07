@@ -22,7 +22,7 @@
                                    
                                     <Image Source="poisson1.png" VerticalOptions="Start"/>
                                     <Label x:Name="toto" Text="Poisson 1" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" TextChanged="okP1"/>
                                 <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
                                     <Button Text="détails" CornerRadius="15" Clicked="Active1"/>
                                 </StackLayout>
@@ -31,7 +31,7 @@
                                     <Grid>
                                         <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
                                         <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="0"/>
-                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" TextChanged="MP1Ma"/>
                                         <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
                                         <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="2"/>
                                         <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
@@ -172,7 +172,7 @@
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
                 <StackLayout Orientation="Horizontal">
                     <Button Text="Cacher" TextColor="White" FontSize="25" BackgroundColor="#2196F3" HorizontalOptions="CenterAndExpand" Clicked="Cacher"/>
-                <Button Text="Envoyer" TextColor="White" FontSize="25" BackgroundColor="#2196F3" HorizontalOptions="CenterAndExpand"/>
+                <Button Text="Envoyer" TextColor="White" FontSize="25" BackgroundColor="#2196F3" HorizontalOptions="CenterAndExpand" Clicked="SendNudes"/>
             </StackLayout>
         </Frame>
         </StackLayout>

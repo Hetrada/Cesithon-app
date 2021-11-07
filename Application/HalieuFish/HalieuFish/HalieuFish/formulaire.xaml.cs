@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 
 namespace HalieuFish
 {
@@ -87,6 +88,19 @@ namespace HalieuFish
 
             original5.IsVisible = true;
             croix5.IsVisible = false;
+        }
+
+        private void SendNudes(object sender, EventArgs e)
+        {
+            EmailMessage smsMessage = new EmailMessage
+            {
+                Subject = "Rapport pêche Bateau : BL934836",
+                Body = "Bonjour voici le rapport détaillé de la pêche du 07/11/2021\n" +
+                "",
+                To = { "baptistelerate@gmail.com" }
+
+            };
+            Task slt = Email.ComposeAsync(smsMessage);
         }
     }
 }

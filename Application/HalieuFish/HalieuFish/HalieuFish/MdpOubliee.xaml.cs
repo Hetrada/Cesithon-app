@@ -13,6 +13,7 @@ namespace HalieuFish
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page2 : ContentPage
     {
+        string adresseTarget;
         public Page2()
         {
             InitializeComponent();
@@ -21,26 +22,28 @@ namespace HalieuFish
 
         private void MailMDP(object sender, EventArgs e)
         {
-            EmailMessage smsMessage = new EmailMessage
+            if (adresseTarget == null) popUp();
+            else
             {
-                Subject = "test hackathon",
-                Body = "voici le test pour le hackathon et ça marche",
-                To = { "clement.montagna@viacesi.fr" }
-            };
-            var fn = "Attachment.txt";
-            var fichier = Path.Combine(FileSystem.CacheDirectory, fn);
-            
-            smsMessage.Attachments.Add(new EmailAttachment(fichier));
-            
-            Task slt = Email.ComposeAsync(smsMessage);
+                EmailMessage smsMessage = new EmailMessage
+                {
+                    Subject = "Mot de passe oublié",
+                    Body = "voici votre mot de passe : testP",
+                    To = { adresseTarget }
 
-
+                };
+                Task slt = Email.ComposeAsync(smsMessage);
+            }
+    
         }
             
-
-        private void OnEntryCompleted(object sender, EventArgs e)
+        public async void popUp()
         {
-            string text = ((Entry)sender).Text;
+            await DisplayAlert("Erreur", "Veuillez rentrer une adresse mail", "OK");
+        }
+        public void OnEntryCompleted(object sender, EventArgs e)
+        {
+            adresseTarget = ((Entry)sender).Text;
         }
     }
 }
