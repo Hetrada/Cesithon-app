@@ -204,7 +204,7 @@ namespace HalieuFish
 
         private void okP1(object sender, TextChangedEventArgs e)
         {
-            if()
+            
         }
 
         private void MP1Ma(object sender, EventArgs e)
