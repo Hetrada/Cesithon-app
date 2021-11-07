@@ -11,6 +11,8 @@
                 <Entry x:Name="code" Placeholder="Code entreprise" />
                 <Entry x:Name="Nom" Placeholder="NOM" />
                 <Entry x:Name="Prenom" Placeholder="Prénom" />
+                <Entry Placeholder="Immatriculation du bateau"/>
+                <Entry Placeholder="Nom du capitaine"/>
                 <DatePicker 
                 MinimumDate="01/01/1950"
                 MaximumDate="12/31/2050"

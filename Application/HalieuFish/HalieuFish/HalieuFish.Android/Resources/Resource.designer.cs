@@ -16655,13 +16655,37 @@ namespace HalieuFish.Droid
 			public const int preference_list_divider_material = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int test_custom_background = 2131165325;
+			public const int poisson1 = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int tooltip_frame_dark = 2131165326;
+			public const int poisson2 = 2131165326;
 			
 			// aapt resource value: 0x7F07008F
-			public const int tooltip_frame_light = 2131165327;
+			public const int poisson3 = 2131165327;
+			
+			// aapt resource value: 0x7F070090
+			public const int poisson4 = 2131165328;
+			
+			// aapt resource value: 0x7F070091
+			public const int poisson5 = 2131165329;
+			
+			// aapt resource value: 0x7F070092
+			public const int poisson6 = 2131165330;
+			
+			// aapt resource value: 0x7F070093
+			public const int poisson7 = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int poisson8 = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int test_custom_background = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int tooltip_frame_dark = 2131165334;
+			
+			// aapt resource value: 0x7F070097
+			public const int tooltip_frame_light = 2131165335;
 			
 			static Drawable()
 			{
