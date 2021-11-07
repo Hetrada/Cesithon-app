@@ -132,79 +132,79 @@ namespace HalieuFish
             box1M = !box1M;
         }
 
-        private void box1_nm(object sender, CheckedChangedEventArgs e)
+        public void box1_nm(object sender, CheckedChangedEventArgs e)
         {
             box1Nm = !box1Nm;
         }
 
-        private void box1_hq(object sender, CheckedChangedEventArgs e)
+        public void box1_hq(object sender, CheckedChangedEventArgs e)
         {
             box1Hq = !box1Hq;
         }
 
-        private void box2_maille(object sender, CheckedChangedEventArgs e)
+        public void box2_maille(object sender, CheckedChangedEventArgs e)
         {
             box2M = !box2M;
         }
 
-        private void box2_nm(object sender, CheckedChangedEventArgs e)
+        public void box2_nm(object sender, CheckedChangedEventArgs e)
         {
             box2Nm = !box2Nm;
         }
 
-        private void box2_hq(object sender, CheckedChangedEventArgs e)
+        public void box2_hq(object sender, CheckedChangedEventArgs e)
         {
             box2Hq = !box2Hq;
         }
 
-        private void box3_maille(object sender, CheckedChangedEventArgs e)
+        public void box3_maille(object sender, CheckedChangedEventArgs e)
         {
             box3M = !box3M;
         }
 
-        private void box3_nm(object sender, CheckedChangedEventArgs e)
+        public void box3_nm(object sender, CheckedChangedEventArgs e)
         {
             box3Nm = !box3Nm;
         }
 
-        private void box3_hq(object sender, CheckedChangedEventArgs e)
+        public void box3_hq(object sender, CheckedChangedEventArgs e)
         {
             box3Hq = !box3Hq;
         }
 
-        private void box4_maille(object sender, CheckedChangedEventArgs e)
+        public void box4_maille(object sender, CheckedChangedEventArgs e)
         {
             box4M = !box4M;
         }
 
-        private void box4_nm(object sender, CheckedChangedEventArgs e)
+        public void box4_nm(object sender, CheckedChangedEventArgs e)
         {
             box4Nm = !box4Nm;
         }
 
-        private void box4_hq(object sender, CheckedChangedEventArgs e)
+        public void box4_hq(object sender, CheckedChangedEventArgs e)
         {
             box4Hq = !box4Hq;
         }
 
-        private void box5_maille(object sender, CheckedChangedEventArgs e)
+        public void box5_maille(object sender, CheckedChangedEventArgs e)
         {
             box5M = !box5M;
         }
 
-        private void box5_nm(object sender, CheckedChangedEventArgs e)
+        public void box5_nm(object sender, CheckedChangedEventArgs e)
         {
             box5Nm = !box5Nm;
         }
 
-        private void box5_hq(object sender, CheckedChangedEventArgs e)
+        public void box5_hq(object sender, CheckedChangedEventArgs e)
         {
             box5Hq = !box5Hq;
         }
 
         private void okP1(object sender, TextChangedEventArgs e)
         {
-
+            if()
         }
 
         private void MP1Ma(object sender, EventArgs e)
