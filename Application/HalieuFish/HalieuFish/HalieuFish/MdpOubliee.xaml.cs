@@ -45,5 +45,10 @@ namespace HalieuFish
         {
             adresseTarget = ((Entry)sender).Text;
         }
+
+        private void retour(object sender, EventArgs e)
+        {
+            App.Current.MainPage = new MainPage();
+        }
     }
 }

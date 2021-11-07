@@ -5,8 +5,16 @@
     <ContentPage.Content>
         <StackLayout>
             <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
-                <Label Text="Récupérer son mot de passe" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-            </Frame>
+                <StackLayout>
+
+                    <Grid>
+                        <Button Text="&lt;" Clicked="retour" BackgroundColor="#2196F3" VerticalOptions="Start"  HorizontalOptions="Start" FontSize="Title"/>
+                    
+                        <Label  Text="Mot de passe oublié" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="26"/>
+                    </Grid>
+                        
+                </StackLayout>
+        </Frame>
 
 
             <Entry x:Name="recup" Placeholder="Adresse mail" Completed="OnEntryCompleted" Keyboard="Email"/>
