@@ -52,11 +52,11 @@ namespace HalieuFish
         {
             if (choixPop == 1)
             {
-                await DisplayAlert("", "Votre compte a bien été créer, vous avez été rediriger vers la page de connexion", "OK");
+                await DisplayAlert("Félicitation", "Votre compte a bien été créer, vous avez été rediriger vers la page de connexion", "OK");
             }
             if (choixPop == 2)
             {
-                await DisplayAlert("Attention", "Vous n'avez remplis aucun champs, veuillez les tous les remplirs !", "OK");
+                await DisplayAlert("Attention", "Vous n'avez pas remplis tout les champs, veuillez tous les remplirs !", "OK");
             }          
         }
 

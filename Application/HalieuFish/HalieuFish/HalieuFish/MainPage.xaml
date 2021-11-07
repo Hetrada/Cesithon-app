@@ -10,7 +10,7 @@
             <Label Text="Connexion" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
-        <Entry x:Name="mail" Placeholder="Adresse mail" TextChanged="OnEntryTextChanged" Completed="OnEntryCompletedMAC"/>
+        <Entry x:Name="mail" Placeholder="Adresse mail" Completed="OnEntryCompletedMAC"/>
         <Entry IsPassword="true" Placeholder="mot de passe" Completed="OnEntryCompletedMDC" />
 
             <Button 

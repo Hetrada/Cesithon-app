@@ -56,20 +56,36 @@ namespace HalieuFish
 
         public void GoConnexion(object sender, EventArgs e)
         {
+            
+            Console.WriteLine("C'est ce mdp"+mdpC);
+            
             if (mdpC == "testE")
             {
-                DonnesUE uneDonne;
-                uneDonne = new DonnesUE();
-                uneDonne.connexionE(mdpC, mailC);
+                Console.WriteLine("!!!!!!!!!!! Entreprise");
+                DonnesUE uneDonneE;
+                uneDonneE = new DonnesUE();
+                uneDonneE.connexionE(mdpC, mailC);
             }
             if (mdpC == "testP")
             {
-                App.Current.MainPage = new formulaire();
+                Console.WriteLine("!!!!!!!!!!! Pecheur");
+                DonnesUP uneDonneP;
+                uneDonneP = new DonnesUP();
+                uneDonneP.connexionP(mdpC, mailC);
+                
+            }
+            if(mdpC != "testE" && mdpC != "testP")
+            {
+                PopUpError();
             }
 
             
         }
 
+        public async void PopUpError()
+        {
+            await DisplayAlert("Erreur", "Les idendifiant ne correspondent pas !", "OK");
+        }
         public void OnEntryCompletedMAC(object sender, EventArgs e)
         {
             mailC = ((Entry)sender).Text;

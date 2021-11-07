@@ -4,13 +4,11 @@ using System.Text;
 
 namespace HalieuFish
 {
-    class UtilisateurP
+    public class UtilisateurP
     {
         public string nom;
         public string prenom;
-        public DateTime dateN;
         public string adresseP;
-        public string nomE;
         public string codeE;
         public string mdp;
         public string immatriculation;
@@ -20,15 +18,15 @@ namespace HalieuFish
 
         }
 
-        public void setvalue(string setNom, string setPrenom, DateTime setDateN, string setAdresseP, string setNomE, string setCodeE, string setMdp, string setImmat)
+        public void setvalue(string setNom, string setPrenom, string setCodeE, string setMdp, string setImmat, string setadresseP)
         {
             nom = setNom;
             prenom = setPrenom;
-            dateN = setDateN;
-            adresseP = setAdresseP;
+
             codeE = setCodeE;
             mdp = setMdp;
             immatriculation = setImmat;
+            adresseP = setadresseP;
         }
 
         public async void PopUpCon(int choix)
@@ -41,6 +39,31 @@ namespace HalieuFish
             {
                 await App.Current.MainPage.DisplayAlert("Attention", "Fonctionnalité en cour de développement", "OK");
             }
+        }
+    }
+
+    public class DonnesUP : UtilisateurP
+    {
+        public string mdpD;
+        public DonnesUP() : base()
+        {
+            mdpD = mdp;
+        }
+        public void connexionP(string mdpEnter, string mailEnter)
+        {
+            Console.WriteLine(mdpEnter);
+            Console.WriteLine(mailEnter);                     
+            if (mdpEnter == "testP" && mailEnter == "baptistelerate@gmail.com")
+            {
+                Console.WriteLine("Succes");
+                App.Current.MainPage = new formulaire();
+            }
+            if (mdpEnter != "testP" && mailEnter != "baptistelerate@gmail.com" || mdpEnter == "testP" && mailEnter != "baptistelerate@gmail.com" || mdpEnter != "testP" && mailEnter == "baptistelerate@gmail.com")
+            {
+                
+                PopUpCon(1);
+            }
+
         }
     }
 }   

@@ -60,11 +60,11 @@ namespace HalieuFish
             Console.WriteLine(mailEnter);
             Console.WriteLine(mdpD);
             Console.WriteLine(adresseME);
-            if (mdpEnter == "test" && mailEnter == "baptistelerate@gmail.com")
+            if (mdpEnter == "testE" && mailEnter == "baptistelerate@gmail.com")
             {
                 PopUpCon(2);
             }
-            if (mdpEnter != "test" && mailEnter != "baptistelerate@gmail.com" || mdpEnter == "test" && mailEnter != "baptistelerate@gmail.com" || mdpEnter != "test" && mailEnter == "baptistelerate@gmail.com")
+            if (mdpEnter != "testE" && mailEnter != "baptistelerate@gmail.com" || mdpEnter == "testE" && mailEnter != "baptistelerate@gmail.com" || mdpEnter != "testE" && mailEnter == "baptistelerate@gmail.com")
             {
                 PopUpCon(1);
             }

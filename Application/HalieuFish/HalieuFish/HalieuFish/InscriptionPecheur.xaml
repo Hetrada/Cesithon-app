@@ -14,11 +14,13 @@
                 <Entry x:Name="Prenom" Placeholder="Prénom" Completed="Enterprenom" />
                 <Entry Placeholder="Immatriculation du bateau" Completed="EnterImmat"/>
                 <DatePicker 
+                x:Name="DataPicker1"
                 MinimumDate="01/01/1950"
                 MaximumDate="12/31/2050"
+                
                 />
-                <Entry Placeholder="Adresse mail"/>
-                <Entry IsPassword="True" Placeholder="Mot de passe"/>
+                <Entry Placeholder="Adresse mail" Completed="EnterMail"/>
+                <Entry IsPassword="True" Placeholder="Mot de passe" Completed="EnterMdp"/>
                 
             </StackLayout>
 
