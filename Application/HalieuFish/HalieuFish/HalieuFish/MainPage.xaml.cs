@@ -10,12 +10,17 @@ using MySqlConnector;
 
 namespace HalieuFish
 {
-    public partial class MainPage : ContentPage
-    {      
+    
+    public partial class MainPage : ContentPage 
+    {
+        string mdpC = null;
+        string mailC = null;
+        
 
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent();        
+
         }
 
         private void GoCreation(object sender, EventArgs e)
@@ -43,6 +48,21 @@ namespace HalieuFish
             }
         }
 
-        
+        public void GoConnexion(object sender, EventArgs e)
+        {
+            DonnesUE uneDonne;
+            uneDonne = new DonnesUE();
+            uneDonne.connexionE(mdpC, mailC);
+        }
+
+        public void OnEntryCompletedMAC(object sender, EventArgs e)
+        {
+            mailC = ((Entry)sender).Text;
+        }
+
+        public void OnEntryCompletedMDC(object sender, EventArgs e)
+        {
+            mdpC = ((Entry)sender).Text;
+        }
     }
 }
