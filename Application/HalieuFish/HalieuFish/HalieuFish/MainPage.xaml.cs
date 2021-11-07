@@ -64,5 +64,7 @@ namespace HalieuFish
         {
             mdpC = ((Entry)sender).Text;
         }
+
+        
     }
 }

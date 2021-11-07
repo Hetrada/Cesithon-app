@@ -2,8 +2,6 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-
-
 namespace HalieuFish
 {
     public partial class App : Application
