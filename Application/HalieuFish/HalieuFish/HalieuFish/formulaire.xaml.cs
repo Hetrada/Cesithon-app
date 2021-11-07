@@ -12,15 +12,33 @@ namespace HalieuFish
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class formulaire : ContentPage
     {
+        bool box1M = false;
+        bool box1Nm = false;
+        bool box1Hq = false;
+
+        bool box2M = false;
+        bool box2Nm = false;
+        bool box2Hq = false;
+
+        bool box3M = false;
+        bool box3Nm = false;
+        bool box3Hq = false;
+
+        bool box4M = false;
+        bool box4Nm = false;
+        bool box4Hq = false;
+
+        bool box5M = false;
+        bool box5Nm = false;
+        bool box5Hq = false;
         public formulaire()
         {
             InitializeComponent();
+
+            
         }
 
-        private void box1(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
+       
 
         private void Active1(object sender, EventArgs e)
         {
@@ -34,15 +52,9 @@ namespace HalieuFish
             croix2.IsVisible = true;
         }
 
-        private void box2(object sender, CheckedChangedEventArgs e)
-        {
+        
 
-        }
-
-        private void box3(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
+        
 
         private void Active3(object sender, EventArgs e)
         {
@@ -50,10 +62,7 @@ namespace HalieuFish
             croix3.IsVisible = true;
         }
 
-        private void box4(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
+       
 
         private void Active4(object sender, EventArgs e)
         {
@@ -61,10 +70,7 @@ namespace HalieuFish
             croix4.IsVisible = true;
         }
 
-        private void box5(object sender, CheckedChangedEventArgs e)
-        {
-
-        }
+        
 
         private void Active5(object sender, EventArgs e)
         {
@@ -101,6 +107,81 @@ namespace HalieuFish
 
             };
             Task slt = Email.ComposeAsync(smsMessage);
+        }
+
+        private void box1_maille(object sender, CheckedChangedEventArgs e)
+        {
+            box1M = !box1M;
+        }
+
+        private void box1_nm(object sender, CheckedChangedEventArgs e)
+        {
+            box1Nm = !box1Nm;
+        }
+
+        private void box1_hq(object sender, CheckedChangedEventArgs e)
+        {
+            box1Hq = !box1Hq;
+        }
+
+        private void box2_maille(object sender, CheckedChangedEventArgs e)
+        {
+            box2M = !box2M;
+        }
+
+        private void box2_nm(object sender, CheckedChangedEventArgs e)
+        {
+            box2Nm = !box2Nm;
+        }
+
+        private void box2_hq(object sender, CheckedChangedEventArgs e)
+        {
+            box2Hq = !box2Hq;
+        }
+
+        private void box3_maille(object sender, CheckedChangedEventArgs e)
+        {
+            box3M = !box3M;
+        }
+
+        private void box3_nm(object sender, CheckedChangedEventArgs e)
+        {
+            box3Nm = !box3Nm;
+        }
+
+        private void box3_hq(object sender, CheckedChangedEventArgs e)
+        {
+            box3Hq = !box3Hq;
+        }
+
+        private void box4_maille(object sender, CheckedChangedEventArgs e)
+        {
+            box4M = !box4M;
+        }
+
+        private void box4_nm(object sender, CheckedChangedEventArgs e)
+        {
+            box4Nm = !box4Nm;
+        }
+
+        private void box4_hq(object sender, CheckedChangedEventArgs e)
+        {
+            box4Hq = !box4Hq;
+        }
+
+        private void box5_maille(object sender, CheckedChangedEventArgs e)
+        {
+            box5M = !box5M;
+        }
+
+        private void box5_nm(object sender, CheckedChangedEventArgs e)
+        {
+            box5Nm = !box5Nm;
+        }
+
+        private void box5_hq(object sender, CheckedChangedEventArgs e)
+        {
+            box5Hq = !box5Hq;
         }
     }
 }

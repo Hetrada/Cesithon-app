@@ -30,14 +30,14 @@
                                 <StackLayout x:Name="croix" IsVisible="false">
                                     <Grid>
                                         <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
-                                        <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="0"/>
-                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" TextChanged="MP1Ma"/>
+                                        <CheckBox CheckedChanged="box1_maille" Grid.Column="1" Grid.Row="0"/>
+                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Completed="MP1Ma"/>
                                         <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
-                                        <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="2"/>
-                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                        <CheckBox CheckedChanged="box1_nm" Grid.Column="1" Grid.Row="2"/>
+                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3" Completed="MP1Nm"/>
                                         <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
-                                        <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="4"/>
-                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+                                        <CheckBox CheckedChanged="box1_hq" Grid.Column="1" Grid.Row="4"/>
+                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5" Completed="MP1Hq"/>
                                         
                                     </Grid>
                                     
@@ -63,14 +63,14 @@
                             <StackLayout x:Name="croix2" IsVisible="false">
                                 <Grid>
                                     <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box2" Grid.Column="1" Grid.Row="0"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <CheckBox CheckedChanged="box2_maille" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Completed="Mp2Ma"/>
                                     <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box2" Grid.Column="1" Grid.Row="2"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <CheckBox CheckedChanged="box2_nm" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3" Completed="Mp2Nm"/>
                                     <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box2" Grid.Column="1" Grid.Row="4"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+                                    <CheckBox CheckedChanged="box2_hq" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5" Completed="Mp2Hq"/>
 
                                 </Grid>
 
@@ -93,14 +93,14 @@
                             <StackLayout x:Name="croix3" IsVisible="false">
                                 <Grid>
                                     <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box3" Grid.Column="1" Grid.Row="0"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <CheckBox CheckedChanged="box3_maille" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Completed="Mp3Ma"/>
                                     <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box3" Grid.Column="1" Grid.Row="2"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <CheckBox CheckedChanged="box3_nm" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3" Completed="Mp3Nm"/>
                                     <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box3" Grid.Column="1" Grid.Row="4"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+                                    <CheckBox CheckedChanged="box3_hq" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5" Completed="Mp3Hq"/>
 
                                 </Grid>
                                 </StackLayout>
@@ -121,14 +121,14 @@
                             <StackLayout x:Name="croix4" IsVisible="false">
                                 <Grid>
                                     <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box4" Grid.Column="1" Grid.Row="0"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <CheckBox CheckedChanged="box4_maille" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Completed="Mp4Ma"/>
                                     <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box4" Grid.Column="1" Grid.Row="2"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <CheckBox CheckedChanged="box4_nm" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3" Completed="Mp4Nm"/>
                                     <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box4" Grid.Column="1" Grid.Row="4"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+                                    <CheckBox CheckedChanged="box4_hq" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5" Completed="Mp4Hq"/>
 
                                 </Grid>
                             </StackLayout>
@@ -150,14 +150,14 @@
                             <StackLayout x:Name="croix5" IsVisible="false">
                                 <Grid>
                                     <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box5" Grid.Column="1" Grid.Row="0"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <CheckBox CheckedChanged="box5_maille" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Completed="Mp5Ma"/>
                                     <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box5" Grid.Column="1" Grid.Row="2"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <CheckBox CheckedChanged="box5_nm" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3" Completed="Mp5Nm"/>
                                     <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
-                                    <CheckBox CheckedChanged="box5" Grid.Column="1" Grid.Row="4"/>
-                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+                                    <CheckBox CheckedChanged="box5_hq" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5" Completed="Mp5Hq"/>
 
                                 </Grid>
                             </StackLayout>
