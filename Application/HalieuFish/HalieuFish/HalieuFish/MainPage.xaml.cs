@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using Xamarin.Forms;
-using MySqlConnector;
+
 
 namespace HalieuFish
 {
