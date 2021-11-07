@@ -24,7 +24,8 @@
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
                 <Button Text="Valider"
-                        CornerRadius="15"/>
+                        CornerRadius="15"
+                        Clicked="CreerUser"/>
                 <Button Text="Retour" 
                         Clicked="precedent"
                         CornerRadius="15"/>

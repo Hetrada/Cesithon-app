@@ -15,7 +15,8 @@ namespace HalieuFish
     {
         string mdpC = null;
         string mailC = null;
-        
+
+   
 
         public MainPage()
         {
@@ -48,13 +49,25 @@ namespace HalieuFish
             }
         }*/
 
-        
+        private void GoFormulaire(object sender, EventArgs e)
+        {
+            
+        }
 
         public void GoConnexion(object sender, EventArgs e)
         {
-            DonnesUE uneDonne;
-            uneDonne = new DonnesUE();
-            uneDonne.connexionE(mdpC, mailC);
+            if (mdpC == "testE")
+            {
+                DonnesUE uneDonne;
+                uneDonne = new DonnesUE();
+                uneDonne.connexionE(mdpC, mailC);
+            }
+            if (mdpC == "testP")
+            {
+                App.Current.MainPage = new formulaire();
+            }
+
+            
         }
 
         public void OnEntryCompletedMAC(object sender, EventArgs e)
