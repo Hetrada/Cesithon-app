@@ -4,15 +4,24 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using Xamarin.Forms;
+using MySqlConnector;
 
 namespace HalieuFish
 {
-    public partial class MainPage : ContentPage
+    
+    public partial class MainPage : ContentPage 
     {
+        string mdpC = null;
+        string mailC = null;
+
+   
+
         public MainPage()
         {
-            InitializeComponent();
+            InitializeComponent();        
+
         }
 
         private void GoCreation(object sender, EventArgs e)
@@ -25,19 +34,52 @@ namespace HalieuFish
             App.Current.MainPage = new Page2();
         }
 
-        void OnEntryTextChanged(object sender, TextChangedEventArgs e)
+       /* void OnEntryTextChanged(object sender, TextChangedEventArgs e)
         {
             var entry = new Entry();
             
-        }
+        }/*
 
-        void OnEntryCompleted(object sender, EventArgs e)
+        /*void OnEntryCompleted(object sender, EventArgs e)
         {
             string text = ((Entry)sender).Text;
             if(text == "pecheur")
             {
                 App.Current.MainPage = new formulaire();
             }
+        }*/
+
+        private void GoFormulaire(object sender, EventArgs e)
+        {
+            
         }
+
+        public void GoConnexion(object sender, EventArgs e)
+        {
+            if (mdpC == "testE")
+            {
+                DonnesUE uneDonne;
+                uneDonne = new DonnesUE();
+                uneDonne.connexionE(mdpC, mailC);
+            }
+            if (mdpC == "testP")
+            {
+                App.Current.MainPage = new formulaire();
+            }
+
+            
+        }
+
+        public void OnEntryCompletedMAC(object sender, EventArgs e)
+        {
+            mailC = ((Entry)sender).Text;
+        }
+
+        public void OnEntryCompletedMDC(object sender, EventArgs e)
+        {
+            mdpC = ((Entry)sender).Text;
+        }
+
+        
     }
 }

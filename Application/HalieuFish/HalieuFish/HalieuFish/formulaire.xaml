@@ -3,10 +3,178 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="HalieuFish.formulaire">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#6fb0e3">
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
+                <Label Text="Formulaire" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+                
+            </Frame>
+
+            <ScrollView BackgroundColor="#6fb0e3">
+                <StackLayout BackgroundColor="#6fb0e3">
+                    
+                    <Grid BackgroundColor="#6fb0e3" RowDefinitions="auto">
+
+                        
+                            <Frame  Grid.Column="0" Grid.Row="0" BackgroundColor="#cccccc" CornerRadius="15">
+                                <StackLayout>
+                                    
+                                <StackLayout x:Name="original" IsVisible="true">
+                                   
+                                    <Image Source="poisson1.png" VerticalOptions="Start"/>
+                                    <Label x:Name="toto" Text="Poisson 1" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                    <Button Text="détails" CornerRadius="15" Clicked="Active1"/>
+                                </StackLayout>
+                                    
+                                <StackLayout x:Name="croix" IsVisible="false">
+                                    <Grid>
+                                        <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
+                                        <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="0"/>
+                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                        <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
+                                        <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="2"/>
+                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                        <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
+                                        <CheckBox CheckedChanged="box1" Grid.Column="1" Grid.Row="4"/>
+                                        <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+                                        
+                                    </Grid>
+                                    
+
+                                </StackLayout>
+                            </StackLayout>                            
+                            </Frame>
+                        
+
+
+                        
+                            <Frame Grid.Column="1" Grid.Row="0" BackgroundColor="#cccccc" CornerRadius="15">
+                            <StackLayout>
+                                <StackLayout x:Name="original2" IsVisible="true">
+                                    <Image Source="poisson2.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 2" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                    <Button Text="détails" CornerRadius="15" Clicked="Active2"/>
+                                
+                            </StackLayout>
+
+                            <StackLayout x:Name="croix2" IsVisible="false">
+                                <Grid>
+                                    <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box2" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box2" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box2" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+
+                                </Grid>
+
+                             </StackLayout>
+                            </StackLayout>
+                        </Frame>
+               
+
+                     
+                    <Frame Grid.Column="0" Grid.Row="1" BackgroundColor="#cccccc" CornerRadius="15">
+                            <StackLayout>
+                                <StackLayout x:Name="original3" IsVisible="true">
+                                    <Image Source="poisson3.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 3" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                    <Button Text="détails" CornerRadius="15" Clicked="Active3"/>
+
+                                </StackLayout>
+                            <StackLayout x:Name="croix3" IsVisible="false">
+                                <Grid>
+                                    <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box3" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box3" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box3" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+
+                                </Grid>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+       
+
+                        
+            <Frame Grid.Column="1" Grid.Row="1" BackgroundColor="#cccccc" CornerRadius="15">
+                            <StackLayout>
+                                <StackLayout x:Name="original4" IsVisible="true">
+                                    <Image Source="poisson8.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 4" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,2,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                    <Button Text="détails" CornerRadius="15" Clicked="Active4"/>
+                                </StackLayout>
+                            <StackLayout x:Name="croix4" IsVisible="false">
+                                <Grid>
+                                    <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box4" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box4" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box4" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+
+                                </Grid>
+                            </StackLayout>
+                            </StackLayout>
+                        </Frame>
+        
+
+                       
+            <Frame  Grid.Column="0" Grid.Row="2" BackgroundColor="#cccccc" CornerRadius="15">
+                            <StackLayout>
+                                <StackLayout x:Name="original5" IsVisible="true">
+                                    <Image Source="poisson5.png" VerticalOptions="Start"/>
+                                    <Label Text="Poisson 5" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center" Padding="0,25,0,0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center"/>
+                                    <Label Text="(.kg)" FontSize="Small" HorizontalTextAlignment="Center"/>
+                                    <Button Text="détails" CornerRadius="15" Clicked="Active5"/>
+                                
+                            </StackLayout>
+                            <StackLayout x:Name="croix5" IsVisible="false">
+                                <Grid>
+                                    <Label Text="Maillé" Grid.Column="0" Grid.Row="0" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box5" Grid.Column="1" Grid.Row="0"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1"/>
+                                    <Label Text="Non-maillé" Grid.Column="0" Grid.Row="2" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box5" Grid.Column="1" Grid.Row="2"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="3"/>
+                                    <Label Text="Hors-quota" Grid.Column="0" Grid.Row="4" FontSize="Medium"/>
+                                    <CheckBox CheckedChanged="box5" Grid.Column="1" Grid.Row="4"/>
+                                    <Entry Placeholder = "Masse de poisson" Keyboard="Numeric" HorizontalTextAlignment="Center" Grid.ColumnSpan="2" Grid.Row="5"/>
+
+                                </Grid>
+                            </StackLayout>
+                            </StackLayout>
+                        </Frame>
+        
+        </Grid>
+
+                </StackLayout>
+                
+            </ScrollView>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="8">
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Cacher" TextColor="White" FontSize="25" BackgroundColor="#2196F3" HorizontalOptions="CenterAndExpand" Clicked="Cacher"/>
+                <Button Text="Envoyer" TextColor="White" FontSize="25" BackgroundColor="#2196F3" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -9,17 +9,21 @@
         </Frame>
 
             <StackLayout Orientation="Vertical" VerticalOptions="Center" Spacing="15">
-                <Entry Placeholder="Code de l'entreprise"/>
-                <Entry Placeholder="Adresse mail"/>
-                <Entry IsPassword="True" Placeholder="Mot de passe"/>
-                <Entry Placeholder="Nom de l'entreprise"/>
-                <Entry Placeholder="Immatriculation du bateau"/>
-                <Entry Placeholder="Nom du capitaine"/>
+                <Entry Placeholder="Code de l'entreprise"
+                       Completed="OnEntryCompletedCE"/>
+                <Entry Placeholder="Adresse mail"
+                       Completed="OnEntryCompletedAME"/>
+                <Entry IsPassword="True" Placeholder="Mot de passe"
+                       Completed="OnEntryCompletedMDP"/>
+                <Entry Placeholder="Nom de l'entreprise"
+                       Completed="OnEntryCompletedNE"/>
+                
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
                 <Button Text="Valider"
-                        CornerRadius="15"/>
+                        CornerRadius="15"
+                        Clicked="CreerUserE"/>
                 <Button Text="Retour" 
                         Clicked="precedent"
                         CornerRadius="15"/>
