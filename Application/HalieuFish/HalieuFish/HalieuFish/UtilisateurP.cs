@@ -30,5 +30,17 @@ namespace HalieuFish
             mdp = setMdp;
             immatriculation = setImmat;
         }
+
+        public async void PopUpCon(int choix)
+        {
+            if (choix == 1)
+            {
+                await App.Current.MainPage.DisplayAlert("Attention", "Les identifiants sont incorectes", "OK");
+            }
+            if (choix == 2)
+            {
+                await App.Current.MainPage.DisplayAlert("Attention", "Fonctionnalité en cour de développement", "OK");
+            }
+        }
     }
-}
+}   
