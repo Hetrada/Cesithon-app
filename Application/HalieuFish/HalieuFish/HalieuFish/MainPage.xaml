@@ -17,8 +17,7 @@
                 Text="Connexion"
                 Clicked="GoConnexion"
                 CornerRadius="15"
-                Margin="15"
-                Clicked="GoFormulaire"/>
+                Margin="15"/>
 
 
         <Grid >

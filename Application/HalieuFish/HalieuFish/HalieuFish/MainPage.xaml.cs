@@ -48,10 +48,7 @@ namespace HalieuFish
             }
         }*/
 
-        private void GoFormulaire(object sender, EventArgs e)
-        {
-            App.Current.MainPage = new formulaire();
-        }
+        
 
         public void GoConnexion(object sender, EventArgs e)
         {
