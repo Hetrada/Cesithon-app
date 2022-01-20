@@ -1,6 +1,6 @@
 # Cesithon-app
 
-Application Réealiser lors d'un Hackaton pour soutenir la mise en oeuvre de l'obligation de débarquement dans la pêche.
+Application Réaliser lors d'un Hackaton pour soutenir la mise en oeuvre de l'obligation de débarquement dans la pêche.
 
 Les entreprises de pêches peuevent travaillé avec cette appliclation pour permettre a chaque bateau de pêche qui leur appartient de remplir un formulaire
 afin de renseigner l'espece, la quantité et les caractériques des poisson ( non-maillé) et également la quantité en dehors de leurs quotas.
